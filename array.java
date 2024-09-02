@@ -1,45 +1,83 @@
 import java.util.Scanner;
 
-public class array{
+//import javax.sound.midi.SysexMessage;
+public class array {
     public static void main(String[] args) {
-     int  marks[]={56,56,78};
-     update(marks);
-      
-      /* 
-      
-      //declaretion of array
-        int marks[]=new int[30];
+  
+         //declare  a array
+  
+        // int[] myArry=new int[5];
+      /*  myArry[0]=98;
+        myArry[1]=67;
+        myArry[3]=78;
+        myArry[4]=90;
+        System.out.println(myArry[0]);
+        System.out.println(myArry[4]);
 
 
-     //   int number[]={1,2,4};
+// declarev a aaray
 
-
-      //  String fruits[]={"aple","mango","orange"};
+        int[] myArry={3,6,5,4,8,9,6,64 };
+       // System.out.println(myArry[1]);
        
-     Scanner input=new Scanner(System.in);
-     marks[0]=input.nextInt();
-     marks[1]=input.nextInt();
-     marks[2]=input.nextInt();
-     marks[2]=marks[2]+2;
-     System.out.println("phy: "+marks[0]);
-     System.out.println("math: "+marks[1]);
-    System.out.println("chem:"+marks[2]);
-*/
+       int index=0;
+       while(index<6){
+        System.out.println(myArry[index]);
+        index++;
+       }
 
 
+
+
+
+
+
+
+// searching in and array  or array traversal
+
+
+Scanner input=new Scanner(System.in);
+//int[] arr={4,65,866,43,86,43,23,99,12,45};
+int[] myArry={3,6,5,4,8,9,6,64 };
+ 
+  System.out.println("enter your number that you want to search");
+  int num=input.nextInt();
+  search(myArry, num);
 
 
 
     }
-    public static void update(int marks[]){
-         for(int i=0;i<marks.length;i++){
-              marks[i]=marks[i]+1;
 
-              //prnt marks
-             for( i=0;i<=marks.length;i++){
-                     System.out.print(marks[i]+" ");
-             } 
-             System.out.println();
-         }    
+    public static void search(int[] myArry ,int num){
+        int index=0;
+        while(index<myArry.length){
+            if(myArry[index]==num){
+                 System.out.println("number found"); 
+            }else{
+                System.out.println("not found");
+            }
+            index++;
+        }
+        */
+
+
+
+
+
+
+        //string array declaration
+
+
+
+
+        String[] strarr=new String[5];
+        strarr[0]="my name ";
+        strarr[1]="kanchan";
+
+        String[] newstr={"first","sec","thires"};
+        System.out.println(newstr.length);
+
+
+
     }
 }
