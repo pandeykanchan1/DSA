@@ -12,4 +12,8 @@ public class bitCountBit {
         }
         return count;
     }
+
+
 }
+//time complexity o(lon n)
+//google amazon
